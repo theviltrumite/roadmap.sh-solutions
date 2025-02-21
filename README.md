@@ -23,6 +23,6 @@ I would be glad if this helps too.
     <img src="https://github.com/user-attachments/assets/d33fa5c8-7b02-4d9c-a02b-bfe3de8eac27" alt="Personal Portfolio" style="border-radius: 8px; width: 350px; height: 300px; border-radius: 10px; object-fit: fill;" />
   </a>
   <a href='/Frontend Projects/Changelog Component/' style="width: 100%; max-width: 350px; height: 300px;">
-    <img src="[https://github.com/user-attachments/assets/d33fa5c8-7b02-4d9c-a02b-bfe3de8eac27](https://github.com/user-attachments/assets/ece50a93-8fd9-4320-bc60-ecffe589857c)" alt="Changelog Component" style="border-radius: 8px; width: 350px; height: 300px; border-radius: 10px; object-fit: fill;" />
+    <img src="https://github.com/user-attachments/assets/ece50a93-8fd9-4320-bc60-ecffe589857c" alt="Changelog Component" style="border-radius: 8px; width: 350px; height: 300px; border-radius: 10px; object-fit: fill;" />
   </a>
 </div>
