@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible Form UI">
+    <meta name="keywords" content="Accessible Form UI, Accessible Form, Form UI, Accessible UI, Accessible">
+    <meta name="author" content="Eren Ballı">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <title>Accessible Form UI</title>
+</head>
+
+<body>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <label for="name">Full Name</label>
+                <input id="name" type="text" name="name" placeholder="What should we call you?" required
+                    aria-required="true">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" value="john@doe.com" required aria-required="true"
+                    aria-invalid="true">
+                <p id="emailError" class="alert" aria-live="polite">Email is already taken</p>
+
+                <div class="user-box">
+                    <label for="password">Enter Password</label>
+                    <input id="password" type="password" name="password" placeholder="xxxxxxxx" required
+                        aria-required="true">
+                    <button  type="button" aria-label="Show Password" class="password-toggle-icon"><i
+                            class="fas fa-eye"></i></button >
+                </div>
+
+                <div class="user-box">
+                    <label for="pdconfirm">Confirm Password</label>
+                    <input id="pdconfirm" type="password" name="pdconfirm" placeholder="xxxxxxxx" required
+                        aria-required="true">
+                    <button  type="button" aria-label="Show Password" class="password-toggle-icon"><i
+                            class="fas fa-eye"></i></button >
+                </div>
+
+                <button type="submit" value="Update Profile">Update Profile</button>
+            </fieldset>
+            <fieldset>
+                <div class="progress">
+                    <div class="progress-pie"></div>
+                    <div class="white-circle"></div>
+                    <div class="progress-text">65%</div>
+                </div>
+                <h2>Profile Completeness</h2>
+                <div class="bottom-progress">
+                    <p><s>Create Account</s></p>
+                    <p><s>Update Roadmap Progress</s></p>
+                    <p><s>Setup Public Profile</s></p>
+                    <p>Complete your first project</p>
+                    <p>Invite your Friends</p>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>

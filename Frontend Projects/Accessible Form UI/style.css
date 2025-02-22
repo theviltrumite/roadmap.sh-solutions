@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 700px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+fieldset {
+    border: none;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input[type="password"]::placeholder {
+    font-size: large;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#email {
+    margin-bottom: 0;
+    border-color: red;
+    color: red;
+    font-weight: bold;
+}
+
+.alert {
+    margin-top: 7px;
+    margin-left: 0.3em;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: red;
+}
+
+input[type="password"]:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.user-box {
+    position: relative;
+}
+
+.user-box button {
+    background: transparent;
+    text-align: end;
+    padding: 0;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 100%;
+    height: 60px;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle-icon i {
+    font-size: 18px;
+    line-height: 1;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.password-toggle-icon i:hover {
+    color: #000;
+}
+
+button {
+    width: 90%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+fieldset:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    height: 100%;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-pie {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#000000 0% 65%, lightgrey 65% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.white-circle {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: conic-gradient(white 0%, white 65%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.progress-text {
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+.bottom-progress {
+    background-color: #E5E5E5;
+    padding: 20px;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: -40px;
+    justify-self: baseline;
+    align-self: baseline;
+    width: 100%;
+}
+
+.bottom-progress p {
+    margin: 0;
+}
+
+s {
+    color: #AAAAAA;
+}
