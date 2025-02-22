@@ -9,6 +9,7 @@ I would be glad if this helps too.
 2. [Basic HTML Website](https://roadmap.sh/projects/basic-html-website)
 3. [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
 4. [Changelog Component](https://roadmap.sh/projects/changelog-component)
+5. [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
 
 ## Project Previews
 
@@ -24,5 +25,8 @@ I would be glad if this helps too.
   </a>
   <a href='/Frontend Projects/Changelog Component/' style="width: 100%; max-width: 350px; height: 300px;">
     <img src="https://github.com/user-attachments/assets/ece50a93-8fd9-4320-bc60-ecffe589857c" alt="Changelog Component" style="border-radius: 8px; width: 350px; height: 300px; border-radius: 10px; object-fit: fill;" />
+  </a>
+  <a href='/Frontend Projects/Testimonial Cards/' style="width: 100%; max-width: 350px; height: 300px;">
+    <img src="https://github.com/user-attachments/assets/80c3805e-0955-4878-a42e-db13b0bd32a1" alt="Testimonial Cards" style="border-radius: 8px; width: 350px; height: 300px; border-radius: 10px; object-fit: fill;" />
   </a>
 </div>
