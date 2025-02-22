@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datepicker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: fit-content;
+    position: absolute;
+}
+
+.topnav {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.topnav input {
+    padding: 5px;
+    border: 2px solid #000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.today {
+    margin: 0;
+}
+
+.back,
+.next {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 14px solid black;
+    cursor: pointer;
+}
+
+.back {
+    transform: rotate(180deg);
+}
+
+.slider {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    padding: 10px;
+}
+
+.slider p {
+    cursor: pointer;
+}
+
+.days {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.day {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid div {
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.grid div::before {
+    content: attr(data-date);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid div {
+    font-weight: 600;
+}
+
+.march {
+    color: rgba(0, 0, 0, 0.5);
+}
