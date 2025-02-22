@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+}
+
+.testimonials {
+    margin: auto;
+    width: 70%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        width: 90%;
+        margin: 0;
+        padding: 0 auto;
+    }
+
+    .onetoone .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-slider .slide {
+        gap: 10px;
+    }
+}
+
+.onetoone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.one {
+    width: 50%;
+}
+
+.speech-bubble {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin: 20px 0;
+    padding: 5px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.speech-bubble::after {
+    border: 12px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+    border-top: 12px solid;
+    border-bottom: 0;
+    content: '';
+    height: 0;
+    width: 0;
+    left: 10%;
+    margin-left: -6px;
+    position: absolute;
+    top: 100%;
+}
+
+.speech-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 10px 20px 20px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.profile {
+    position: relative;
+    left: 10%;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.profile-details {
+    margin-left: 10px;
+}
+
+.profile-name {
+    font-weight: 500;
+    margin: 0;
+}
+
+.profile-position {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 0.85em;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.banner {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+}
+
+.middle .profile-details {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+
+.middle .profile-name {
+    color: white;
+}
+
+.middle .profile-position {
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(165, 165, 165);
+}
+
+.middle p {
+    color: rgb(228, 228, 228);
+}
+
+.testimonial-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.testimonial-slider p {
+    width: 80%;
+    text-align: center;
+}
+
+.slider {
+    height: fit-content;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slide p {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.profiles .profile-picture {
+    cursor: pointer;
+}
+
+.slide img:nth-of-type(1),
+img:nth-of-type(3) {
+    width: 50px;
+}
+
+.slide img:nth-of-type(2) {
+    width: 60px;
+}
