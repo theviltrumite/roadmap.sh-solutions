@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 80vw;
+    border: black 2px solid;
+    border-radius: 15px;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: block;
+    }
+
+    ul {
+        margin-top: 30px;
+    }
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+h2+span {
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+ul {
+    list-style-type: disc;
+    position: relative;
+    padding-left: 0;
+}
+
+li {
+    display: inline;
+}
+
+nav span {
+    display: none;
+    width: max-content;
+    height: fit-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+}
+
+nav li+li::before {
+    content: "\2022  ";
+    color: gray;
+}
+
+li:nth-of-type(2) {
+    cursor: pointer;
+}
+
+li:nth-of-type(2) .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+li:nth-of-type(2):hover .tooltip {
+    display: block;
+    position: absolute;
+}
