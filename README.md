@@ -12,7 +12,8 @@ I would be glad if this helps too.
 5. [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
 6. [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)
 7. [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
-7. [Image Grid Layout](https://roadmap.sh/projects/image-grid)
+8. [Image Grid Layout](https://roadmap.sh/projects/image-grid)
+9. [Tooltip UI](https://roadmap.sh/projects/tooltip-ui)
 
 ## Project Previews
 
@@ -40,5 +41,8 @@ I would be glad if this helps too.
   </a>
   <a href='/Frontend Projects/Image Grid Layout/' style="width: 100%; max-width: 350px; height: 300px;">
     <img src="https://github.com/user-attachments/assets/bf3e6b7c-f84c-45de-80f2-bd1daa2a2e6e" alt="Image Grid Layout" style="border-radius: 8px; width: 350px; height: 300px; border-radius: 10px; object-fit: fill;" />
+  </a>
+  <a href='/Frontend Projects/Tooltip UI/' style="width: 100%; max-width: 350px; height: 300px;">
+    <img src="https://github.com/user-attachments/assets/00297bc3-e1e9-45b5-8391-3daf82a2fbab" alt="Tooltip UI" style="border-radius: 8px; width: 350px; height: 300px; border-radius: 10px; object-fit: fill;" />
   </a>
 </div>
